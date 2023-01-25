@@ -3,6 +3,8 @@ node{
     echo "The branch name is: ${env.BRANCH_NAME}"
     echo "The build number is: ${env.BUILD_NUMBER}"
     echo "the job name is:   ${env.JOB_NAME}"
+    
+   /*
 stage('CheckoutCode'){
   git branch: 'development', credentialsId: '8f24fe7f-55a7-4966-86a1-6d4189f60567', url: 'https://github.com/Hdfc-ltd/maven-web-application.git'  
 }
@@ -21,5 +23,5 @@ sh "${mavenHome}/bin/mvn clean package"
     sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war  ec2-user@43.205.125.187:/opt/apache-tomcat-9.0.70/webapps"
 }
  }
-    
+ */   
 }
