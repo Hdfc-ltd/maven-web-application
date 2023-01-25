@@ -2,7 +2,7 @@ node{
     def mavenHome = tool name: 'maven-3.8.7'
     echo "The branch name is: ${env.BRANCH_NAME}"
     echo "The build number is: ${env.BUILD_NUMBER}"
-    echo "the job name is:   ${env.JOB_NAME}"
+    echo "the job name is:${env.JOB_NAME}"
     
    /*
 stage('CheckoutCode'){
